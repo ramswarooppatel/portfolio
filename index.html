@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMSWAROOP PATEL</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/2hwd3yM/rpx.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Eye Icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="welcome">
+            <h1 id="welcome-message"></h1> <br>
+
+            <!-- Hamburger Icon for Mobile -->
+            <button class="hamburger" onclick="toggleNavbar()">
+                <img src="https://cdn-icons-png.flaticon.com/128/8111/8111040.png" alt="hamburger icon">
+            </button>
+
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <a href="#" onclick="showSection('home', this)">HOME</a>
+                <a href="#" onclick="showSection('projects', this)">PROJECTS</a>
+                <a href="#" onclick="showSection('education', this)">EDUCATION</a>
+                <a href="#" onclick="showSection('experience', this)">EXPERIENCE</a>
+                <a href="#" onclick="showSection('contact', this)">CONTACT</a>
+                <a href="#" onclick="showSection('cv', this)">CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <!--===============HOME================-->
+    <div id="home" class="section active">
+        <h2>Home</h2>
+        <img src="https://i.ibb.co/2hwd3yM/rpx.jpg" alt="Profile pic" class="profile-pic"><br>
+        <h1>RAMSWAROOP PATEL</h1>
+        <p>Welcome to the homepage!</p>
+        <h2 class="about">A passionate coding enthusiast with a strong belief in the power of technology to solve real-world problems. Proficient in various programming languages.
+        </h2>
+        
+    </div>
+
+    <!--===============PROJECTS================-->
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <img src="https://i.ibb.co/2hwd3yM/rpx.jpg" alt="Profile pic" class="profile-pic"><br>
+        <h5>Here are some projects I have worked on.</h5>
+    <div class="link-projects">
+        <button type="button" class="rfid_door_lock" onclick="windows.location.href='https://github.com/ramswarooppatel/rfid_door_lock';">RFID DOOR LOCK SYSTEM</button><br><br>
+        <button type="button" class="rfid_door_lock" href="https://github.com/ramswarooppatel/rfid_door_lock">Smart car parking SYSTEM</button><br><br>
+        <button type="button" class="rfid_door_lock" href="https://github.com/ramswarooppatel/rfid_door_lock">Anti-crashing and hand moment control car</button><br><br>
+    </div>
+    </div>
+
+    <!--===============EDUCATION================-->
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <img src="https://i.ibb.co/2hwd3yM/rpx.jpg" alt="Profile pic" class="profile-pic"><br>
+        <p>My education background is here.</p>
+
+
+        <span class="study-info"></span>
+        <div class="college">
+        <h1 class="srmname">SRM UNIVERSITY</h1>
+            <h3>Currently doing my UG</h3>
+            <h4 class="b-in">Bachelors in Technology (B.Tech)</h4>
+            <h4 class="Branch">Branch : Computer Science Engineering</h4>
+            <h4 class="Branch">Specialization: CYBERSECURITY</h4>
+            <div class="secret-code-container">
+                <h1>Registration number :</h1>
+                <input type="text" id="secret-code" class="secret-code" value="RA2411*********" readonly="">
+                <i class="fas eye-icon fa-eye-slash" id="toggle-eye" onclick="toggleSecretCode()">
+                    <img id="eye-icon-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWV5ZSI+PHBhdGggZD0iTTIuMDYyIDEyLjM0OGExIDEgMCAwIDEgMC0uNjk2IDEwLjc1IDEwLjc1IDAgMCAxIDE5Ljg3NiAwIDEgMSAwIDAgMSAwIC42OTYgMTAuNzUgMTAuNzUgMCAwIDEtMTkuODc2IDAiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIzIi8+PC9zdmc+" />
+                </i>
+            </div>
+        </div><br><br>
+        <div class="school">
+            <h1 class="tjvname">TJV MHSS</h1>
+                <h3>Completed my higher education in SCIENCE FIELD</h3>
+                <h4 class="tnboard">Board : TamilNadu </h4>
+                <h4 class="Stream">Stream : Science Stream (PCMCs)</h4>
+            </div>
+        </span>
+
+
+        <!-- Secret Code Box -->
+        
+    </div>
+
+    <!--===============EXPERIENCE================-->
+    <div id="experience" class="section">
+        <h2>Experience</h2>
+        <img src="https://i.ibb.co/2hwd3yM/rpx.jpg" alt="Profile pic" class="profile-pic"><br>
+        <p>This section covers my work experience.</p>
+        <div class="workedat">
+            <div class="djjazzy" ><h1>DJ JAZZY</h1><h2>Social media management and automations</h2><h4>2024-Present</h4></div><br><br>
+            <div class="sb" ><h1>SHIVAAY BOUTIQUE</h1><h2>Digitalize brand and management and WEb-dev</h2><h4>2024-Present</h4></div><br><br>
+        </div>
+    </div>
+
+    <!--===============CONTACT================-->
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <img src="https://i.ibb.co/2hwd3yM/rpx.jpg" alt="Profile pic" class="profile-pic"><br>
+        <h4>Contact me via email or phone.</h4>
+        <div class="contact">
+            <button class="email" type="button" onclick="contact()">EMAIL ADDRESS</button><br><br>
+            <button class="sh" type="button" onclick="sh()">SOCIAL HANDLE's</button>
+        </div>
+    </div>
+
+    <div id="cv" class="section">
+        <h2>CV</h2>
+        <p>Here is a link to download my CV.</p>
+        <h1 class="comingsoon">COMING SOON .... working on it ....</h1>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

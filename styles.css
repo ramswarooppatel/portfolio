@@ -1,0 +1,219 @@
+/* General Styles */
+.body{
+    background-color: bisque;
+}
+.container {
+    padding: 10px;
+    text-align: center;
+    background-color: #979797;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar a {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #3c6d70;
+    color: rgb(49, 161, 100);
+    border-bottom: 2px solid red; /* Red underline on hover */
+}
+.navbar a.active-tab {
+    background-color: rgb(128, 138, 72);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-bottom: 2px solid red; /* Red underline for active tab */
+    transform: translateY(2px); /* Button press effect */
+}
+
+/* Section Styles */
+.section {
+    display: none;
+    padding: 20px;
+    background-image: url('https://i.ibb.co/X2bW3Nz/8machine-Lh-NDEs4-MP5w-unsplash-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1); /* Black with 70% opacity */
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* White with 70% opacity */
+    z-index: 1;
+}
+
+.section > * {
+    position: relative;
+    z-index: 2;
+}
+.active {
+    display: block;
+}
+
+/* Secret Code Box */
+.secret-code-container {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+  
+}
+
+.secret-code {
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 35px;
+    width: 300px;
+    background-color: rgb(201, 201, 201);
+    letter-spacing: 3px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000000;
+}
+.eye-icon:hover{
+    color: #ff0000;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: #5e5e5e;
+    border: none;
+    padding: 10px;
+}
+.hamburger img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+#home{
+    align-items: center;
+}
+.profile-pic{
+    height: 150px;
+    border-radius: 35%;
+}
+.link-projects {
+   background-color: #5e5e5e;
+   padding: 10px;
+   word-spacing: 10px;
+   scroll-padding-block: 10px;
+   animation: both;
+   transition: ease-in-out 10px;
+}
+
+.rfid_door_lock{
+    transition: ease-in-out;
+    padding: 12px;
+    border-radius: 40px;
+    align-items: center;
+    font-size: large;
+    font-style: Bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rfid_door_lock:hover{
+    transition: ease-in-out;
+    padding: 14px;
+    border-radius: 60px;
+    align-items: center;
+    font-size: large;
+    font-style: Bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+    cursor:pointer;
+    transform: translateY(2px);
+    
+}
+.college , .school{
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: larger;
+}
+.college:hover , .school:hover{
+    background-color: rgb(174, 253, 128);
+    border-radius: 35px;
+    padding: 12px;
+    font-size: larger;
+    transform: translateY(3px);
+}
+.b-in,.tnboard{
+    padding: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Branch , .Stream {
+    padding: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #3c6d70;
+    transition: ease-in-out;
+    text-shadow: #5e5e5e;
+    text-decoration: wavy;
+}
+.workedat{
+    padding: 7px;
+    background-color: #3c6d70;
+    border-radius: 25px;
+    font-weight: 400;
+}
+.djjazzy , .sb{
+    padding: 8px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 25px;
+    font-size: larger;
+    /*transform: translateY(4px);*/
+}
+.djjazzy:hover, .sb:hover{
+    padding: 8px;
+    background-color: rgb(116, 255, 237);
+    border-radius: 35px;
+    font-size: larger;
+    transform: translateY(4px);
+}
+.email , .sh{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: beige;
+    cursor: pointer;
+    font-size: xx-large;
+    font-family: fantasy;
+    border: #5e5e5e;
+    
+}
